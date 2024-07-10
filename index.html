@@ -6,7 +6,7 @@
     <title>HerSuccessBlueprint</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f8f9fa;
             color: #333;
             margin: 0;
@@ -21,23 +21,23 @@
         header h1 {
             margin: 0;
             font-size: 2.5em;
+            font-weight: normal;
         }
         nav {
             display: flex;
             justify-content: center;
             background-color: #495057;
+            padding: 10px 0;
         }
         nav a {
             color: #fff;
             padding: 15px 20px;
             text-decoration: none;
             text-transform: uppercase;
+            font-weight: bold;
         }
         nav a:hover {
             background-color: #343a40;
-        }
-        section {
-            padding: 20px;
         }
         .hero {
             text-align: center;
@@ -47,12 +47,32 @@
         .hero h2 {
             font-size: 2em;
             margin-bottom: 20px;
+            color: #495057;
         }
         .hero p {
             font-size: 1.2em;
+            color: #6c757d;
+        }
+        .section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 1000px;
         }
         .products, .blog, .contact {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 20px;
             margin: 20px 0;
+        }
+        h2 {
+            font-size: 1.8em;
+            color: #343a40;
+            border-bottom: 2px solid #f8f9fa;
+            padding-bottom: 10px;
+        }
+        .products p, .blog p, .contact p {
+            color: #6c757d;
         }
         .footer {
             background-color: #343a40;
@@ -79,23 +99,32 @@
         <h2>Empowering Every Girl to Succeed</h2>
         <p>Mental, Physical, and Financial Success through Digital Skills</p>
     </section>
-    <section id="products" class="products">
-        <h2>Our Products</h2>
-        <p>Explore our range of products designed to help you achieve success in every aspect of your life.</p>
-        <!-- Add product details here -->
-    </section>
-    <section id="blog" class="blog">
-        <h2>Blog</h2>
-        <p>Read our latest articles and tips on how to become successful in your career and personal life.</p>
-        <!-- Add blog posts here -->
-    </section>
-    <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <p>If you have any questions or need further guidance, feel free to reach out to us.</p>
-        <!-- Add contact form or details here -->
-    </section>
+    <div class="section">
+        <section id="products" class="products">
+            <h2>Our Products</h2>
+            <p>Explore our range of products designed to help you achieve success in every aspect of your life.</p>
+            <!-- Add product details here -->
+        </section>
+    </div>
+    <div class="section">
+        <section id="blog" class="blog">
+            <h2>Blog</h2>
+            <p>Read our latest articles and tips on how to become successful in your career and personal life.</p>
+            <!-- Add blog posts here -->
+        </section>
+    </div>
+    <div class="section">
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need further guidance, feel free to reach out to us.</p>
+            <p>Email: contact@hersuccessblueprint.com</p>
+            <p>Phone: +1234567890</p>
+            <!-- Add a contact form if needed -->
+        </section>
+    </div>
     <footer class="footer">
         <p>&copy; 2024 HerSuccessBlueprint. All rights reserved.</p>
     </footer>
 </body>
 </html>
+
